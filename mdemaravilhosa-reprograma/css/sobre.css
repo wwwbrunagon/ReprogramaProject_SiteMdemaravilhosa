@@ -1,38 +1,53 @@
 /* geral */
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;  */
+*{ 
+ font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;  
+}
 
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif; 
 }
 
-/* HEADER */
-
-header{
-background-image: url("../img/bg-banner-claro.png");
-min-height: 100px;
-text-align: left;
-}
+/* HEADER
+mobile */
 
 header h1{
-font-family: 'Roboto', sans-serif;
-font-size: 120px;
-font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+    padding: 100px 250px 0px 100px;
+    }
+
+/* responsive */
+@media (min-width: 1024px) {
+
+    header{
+    background-image: url("../img/bg-banner-escuro.png");
+    text-align: left;
+        }
+
+    header h1{
+    font-size: 120px;
+    font-weight: bolder;
+     }
 }
+
+
+/* ONDE 
+mobile */
 
 .ondebg > div   {
 background-color: #7e5a9b;
 align-content: center;
-max-width: 800px;
-height: 150px;
+max-width: 100%;
+height: 100px;
 margin: 20px auto;
 }
     
 .onde h1{
-font-size: 35px;
 color:#63458a;
-font-family: 'Roboto', sans-serif;
 text-align: center;
 margin-top: 30px;
 margin-bottom: 30px;
@@ -40,33 +55,33 @@ margin-bottom: 30px;
 
 
 .onde p { 
-max-width: 800px;
+max-width: 85%;
 height: 150px;
 margin: 20px auto;
-text-align: left;
+text-align: center;
 line-height: 1.5em;
-font-size: 19px;
+font-size: 14px;
 }
 
 .onde-destaque{
 display: flex;
 justify-content: center;
-margin: 0 auto;
-max-width: 800px;
 }
 
 .onde-destaque h2{
-font-size: 70px;
+font-size: 50px;
 font-weight: bolder;
-padding-right: 30px;
+padding-right: 15px;
+padding-left: 20px
 }
 
 .onde-destaque p {
-max-width: 400px;
 line-height: 1.5em;
-font-size: 19px;
+font-size: 14px;
 color: #7e5a9b;
 font-weight: bolder;
+text-align: left;
+margin: 10px;
 }
 
 .destaque div {
@@ -74,3 +89,43 @@ display: flex;
 justify-content: center;
 margin: 0 auto;
 }
+
+
+/* responsive */
+    @media (min-width: 1024px) { 
+
+    .ondebg > div   {
+    max-width: 800px;
+    height: 150px;
+    }
+        
+    .onde h1{
+    font-size: 35px;
+      }
+
+
+    .onde p { 
+    max-width: 800px;
+    text-align: left;
+    font-size: 19px;
+    }
+
+    .onde-destaque{
+     margin: 0 auto;
+    max-width: 800px;
+    }
+
+    .onde-destaque h2{
+    font-size: 70px;
+    font-weight: bolder;
+    padding-right: 30px;
+    padding-left: 20px
+    }
+
+    .onde-destaque p {
+    max-width: 400px;
+    line-height: 1.5em;
+    font-size: 19px;
+     font-weight: bolder;
+    }
+ }
