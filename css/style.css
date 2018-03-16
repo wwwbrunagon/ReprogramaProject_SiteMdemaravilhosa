@@ -43,7 +43,8 @@ nav div ul {
 /* DESKTOP respnsive */
 /* navegação Desktop */
 
-@media (min-width: 1024px) {
+/* 768 é um breakpoint mais meio termo pra displays diferentes */
+@media (min-width: 768px) {
 
     .mobilebtn {
         display: none;
@@ -108,6 +109,7 @@ text-align: left;
 .textoheader{
 color: white;
 text-align: left;
+/* Ao invés de voce quebrar a linha com <br> voce pode reduzir a % de width, para nao correr o risco de ele quebrar estranho */
 max-width: 100%;
 padding: 10%;
 }
@@ -134,11 +136,13 @@ background-color: #9a48d0;
 padding: 10px 39px 13px 35px;
 text-transform: uppercase;
 border-radius: 9px;
+/* melhor definir parametro no css */
+font-weight: bold;
 }
 
 /* HEADER Responsive Desktop */
 
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
 
     header {
         min-height: 70vh;
@@ -175,6 +179,7 @@ border-radius: 9px;
         font-weight: bold;
         }
 
+        /* você pode usar a mesma classe para todos os botoes */
         header a{
         list-style: none;
         color: white;
@@ -221,7 +226,7 @@ border-radius: 9px;
         }
     
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     .about{
         background-color: #7e5a9b;
         display: block;
@@ -251,7 +256,8 @@ background-color: #ddd0ec;
 padding-bottom: 2px;
 }
 
-.saibamais h2{
+/* você pode setar os parametros para a tag h2 */
+.titulo mulheres h2{
 font-family: 'Roboto', sans-serif;
 text-align: center;
 color: #b288c0;
@@ -401,7 +407,7 @@ font-size:9px;
 
 
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 .rodape{
     width: 900px;
  }
